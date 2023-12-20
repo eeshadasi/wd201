@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <title>Form Registration</title>
+    <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <h1>Registration Form</h1>
+            <div class="data">
+                <div>
+                    <label for="name">Name</label>
+                    <input required type="text" name="name" id="name" placeholder="Enter name person "/>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input required type="email" name="email" id="email" placeholder="Enter the email" />
+                </div>
+                <div>
+                <label for="password">Password</label>
+                <input required type="password" name="password" id="password" placeholder="Enter the password"/>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth</label>
+                    <input required type="date" name="dob" id="dob"/>
+                </div>
+            </div>
+            <div class="terms">
+                <input type="checkbox" name="acceptTerms" id="acceptTerms"/>
+                <label for="acceptTerms">Accept Terms & Conditions</label>
+            </div>
+            <div class="submit">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="userTableContainer">
+        <h1>Entries</h1>
+        <table id="userTable">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Dob</th>
+                <th>Accepted terms?</th>
+            </tr>
+        </table>
+    </div>
+</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
